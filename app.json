@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "JeuMobile",
+    "slug": "JeuMobile",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
