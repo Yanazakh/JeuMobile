@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { translations } from '../constants/gameConfig';
 
 const GameOverScreen = ({ onRestart, scores, lang }) => {
@@ -11,9 +11,9 @@ const GameOverScreen = ({ onRestart, scores, lang }) => {
             <Text style={styles.scoreText}>{`${t.finalGoodScore} ${finalScores.goodScore}`}</Text>
             <Text style={styles.scoreText}>{`${t.moneyScore} ${finalScores.moneyScore}`}</Text>
             <Text style={styles.scoreText}>{`${t.badScore} ${finalScores.badScore}`}</Text>
-            <TouchableOpacity style={[styles.button, styles.bgBlue]} onPress={onRestart}>
+            <Pressable style={[styles.button, styles.bgBlue]} onPress={onRestart}>
                 <Text style={styles.buttonText}>{t.restartButton}</Text>
-            </TouchableOpacity>
+            </Pressable>
         </View>
     );
 };

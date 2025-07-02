@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { translations } from '../constants/gameConfig';
 
 const StartScreen = ({ onStart, lang }) => {
@@ -8,9 +8,9 @@ const StartScreen = ({ onStart, lang }) => {
         <View style={styles.screenOverlay}>
             <Text style={styles.title}>{t.startTitle}</Text>
             <Text style={styles.description}>{t.startDesc}</Text>
-            <TouchableOpacity style={[styles.button, styles.bgGreen]} onPress={onStart}>
+            <Pressable style={[styles.button, styles.bgGreen]} onPress={onStart}>
                 <Text style={styles.buttonText}>{t.startButton}</Text>
-            </TouchableOpacity>
+            </Pressable>
         </View>
     );
 };
