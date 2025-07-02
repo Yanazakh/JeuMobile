@@ -66,9 +66,45 @@ export const itemTypes = {
     },
 };
 
-export const translations = { 
-    fr: { /* ... */ },
-    en: { /* ... */ },
-    ar: { /* ... */ },
-    ms: { /* ... */ }
+export const translations = {
+    fr: {
+        startTitle: "Bienvenue dans le jeu",
+        startDesc: "Appuyez sur le bouton pour commencer",
+        startButton: "Commencer",
+        gameOverTitle: "Fin de la partie",
+        finalGoodScore: "Actions vertueuses :",
+        moneyScore: "Argent :",
+        badScore: "Mauvaises actions :",
+        restartButton: "Rejouer",
+    },
+    en: {
+        startTitle: "Welcome to the game",
+        startDesc: "Press the button to start",
+        startButton: "Start",
+        gameOverTitle: "Game over",
+        finalGoodScore: "Good deeds:",
+        moneyScore: "Money:",
+        badScore: "Bad deeds:",
+        restartButton: "Restart",
+    },
+    ar: {
+        startTitle: "\u0645\u0631\u062D\u0628\u0627 \u0628\u0643\u0645",
+        startDesc: "\u0627\u0636\u063A\u0637 \u0644\u0644\u0628\u062F\u0621",
+        startButton: "\u0628\u062F\u0621",
+        gameOverTitle: "\u0646\u0647\u0627\u064A\u0629 \u0627\u0644\u0644\u0639\u0628\u0629",
+        finalGoodScore: "\u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062E\u064A\u0631\u0629:",
+        moneyScore: "\u0627\u0644\u0645\u0627\u0644:",
+        badScore: "\u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0633\u064A\u0626\u0629:",
+        restartButton: "\u0627\u0639\u062F \u0627\u0644\u0644\u0639\u0628",
+    },
+    ms: {
+        startTitle: "Selamat datang",
+        startDesc: "Tekan butang untuk bermula",
+        startButton: "Mula",
+        gameOverTitle: "Tamat permainan",
+        finalGoodScore: "Amalan baik:",
+        moneyScore: "Wang:",
+        badScore: "Amalan buruk:",
+        restartButton: "Main semula",
+    }
 };
