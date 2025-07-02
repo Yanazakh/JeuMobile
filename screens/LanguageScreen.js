@@ -1,26 +1,26 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
 
 const LanguageScreen = ({ onSelectLanguage }) => {
     return (
         <View style={styles.screenOverlay}>
             <Text style={styles.title}>Choisissez votre langue / Choose your language</Text>
             <View>
-                <TouchableOpacity style={[styles.button, styles.bgBlue]} onPress={() => onSelectLanguage('fr')}>
+                <Pressable style={[styles.button, styles.bgBlue]} onPress={() => onSelectLanguage('fr')}>
                     <Text style={styles.buttonText}>Français</Text>
-                </TouchableOpacity>
+                </Pressable>
 
-                <TouchableOpacity style={[styles.button, styles.bgGreen]} onPress={() => onSelectLanguage('en')}>
+                <Pressable style={[styles.button, styles.bgGreen]} onPress={() => onSelectLanguage('en')}>
                     <Text style={styles.buttonText}>English</Text>
-                </TouchableOpacity>
+                </Pressable>
 
-                <TouchableOpacity style={[styles.button, styles.bgRed]} onPress={() => onSelectLanguage('ar')}>
+                <Pressable style={[styles.button, styles.bgRed]} onPress={() => onSelectLanguage('ar')}>
                     <Text style={styles.buttonText}>العربية</Text>
-                </TouchableOpacity>
+                </Pressable>
 
-                <TouchableOpacity style={[styles.button, styles.bgYellow]} onPress={() => onSelectLanguage('ms')}>
+                <Pressable style={[styles.button, styles.bgYellow]} onPress={() => onSelectLanguage('ms')}>
                     <Text style={styles.buttonText}>Bahasa Melayu</Text>
-                </TouchableOpacity>
+                </Pressable>
             </View>
         </View>
     );
